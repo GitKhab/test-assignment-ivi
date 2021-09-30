@@ -1,7 +1,3 @@
 <template>
-  <Tutorial />
+  *content*
 </template>
-
-<script>
-export default {}
-</script>
