@@ -14,5 +14,9 @@ module.exports = {
   ],
   plugins: [],
   // Add your custom rules here
-  rules: {}
+  rules: {
+    // Enforce 2 space indentation in <script> section
+    indent: 'off',
+    'vue/script-indent': ['error', 2, { baseIndent: 1 }]
+  }
 }
