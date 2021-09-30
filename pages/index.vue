@@ -1,3 +1,3 @@
 <template>
-  *content*
+  <div>*content*</div>
 </template>
