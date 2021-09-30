@@ -29,8 +29,20 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+
+    // https://github.com/nuxt-community/style-resources-module
+    '@nuxtjs/style-resources'
   ],
+
+  // Do not import actual styles. Use styleResources module only to import variables,
+  // mixins, functions (et cetera) as they won't exist in the actual build
+  styleResources: {
+    scss: [
+      '@/assets/scss/variables/**/*.scss',
+      '@/assets/scss/mixins/**/*.scss'
+    ]
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
