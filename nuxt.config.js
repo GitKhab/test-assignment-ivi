@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'test-assignment-ivi',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },
