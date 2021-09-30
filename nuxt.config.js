@@ -36,5 +36,10 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+
+  // Development server host: https://nuxtjs.org/docs/features/configuration/#edit-host-and-port
+  server: {
+    host: '0.0.0.0' // default: localhost
+  }
 }
