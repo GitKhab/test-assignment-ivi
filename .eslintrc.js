@@ -21,6 +21,10 @@ module.exports = {
 
     // Disable "require a line break before and after the contents of a single line element"
     // https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html
-    'vue/singleline-html-element-content-newline': 'off'
+    'vue/singleline-html-element-content-newline': 'off',
+
+    // Disallow a space before function parenthesis
+    // https://eslint.org/docs/rules/space-before-function-paren
+    'space-before-function-paren': ['error', 'never']
   }
 }
