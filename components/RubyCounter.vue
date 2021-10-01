@@ -16,6 +16,7 @@
       counter(value) {
         if (value > 3) {
           this.counter = 0
+          this.stopCounter()
         }
       }
     },
@@ -25,6 +26,9 @@
         this.timer = setInterval(() => {
           this.counter++
         }, 750)
+      },
+      stopCounter() {
+        clearTimeout(this.timer)
       }
     }
   }
