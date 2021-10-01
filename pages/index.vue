@@ -32,6 +32,7 @@
   .home {
     display: flex;
     padding: 24px 16px;
+    transition: background-color 0.3s;
   }
 
   .home_theme_dark {
