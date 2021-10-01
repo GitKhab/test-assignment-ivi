@@ -1,5 +1,9 @@
 <template lang="pug">
-  button.ruby-counter(@click.once="startCounter")
+  button.ruby-counter(
+    @click.once="startCounter"
+    @mouseover="switchOnRubyHoverStatus"
+    @mouseleave="switchOffRubyHoverStatus"
+  )
     span.ruby-counter__content {{ counter ? counter : 'Go!' }}
 </template>
 
@@ -37,6 +41,12 @@
       },
       stopCounter() {
         clearTimeout(this.timer)
+      },
+      switchOnRubyHoverStatus() {
+        this.$store.commit('rubyCounter/switchOnHoverStatus')
+      },
+      switchOffRubyHoverStatus() {
+        this.$store.commit('rubyCounter/switchOffHoverStatus')
       }
     }
   }
