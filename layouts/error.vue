@@ -1,11 +1,9 @@
-<template>
-  <div class="error">
-    <div class="error__inner">
-      <h1 class="error__title" v-if="error.statusCode === 404">Упс, такой страницы нет</h1>
-      <h1 class="error__title" v-else>Упс, произошла какая-то ошибка</h1>
-      <NuxtLink class="error__link" to="/">На главную</NuxtLink>
-    </div>
-  </div>
+<template lang="pug">
+  div.error
+    div.error__inner
+      h1.error__title(v-if="error.statusCode === 404") Упс, такой страницы нет
+      h1.error__title(v-else) Упс, произошла какая-то ошибка
+      NuxtLink.error__link(to="/") На главную
 </template>
 
 <script>
