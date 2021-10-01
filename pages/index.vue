@@ -1,7 +1,3 @@
 <template>
-  <Tutorial />
+  <div>*content*</div>
 </template>
-
-<script>
-export default {}
-</script>
