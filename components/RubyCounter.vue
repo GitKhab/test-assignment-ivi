@@ -9,23 +9,30 @@
     data() {
       return {
         counter: 0,
+        counterLimit: 3,
         timer: null
       }
     },
     watch: {
       counter(value) {
-        if (value > 3) {
-          this.counter = 0
+        if (value > this.counterLimit) {
+          this.resetCounter()
           this.stopCounter()
           setTimeout(this.startCounter, 3000)
         }
       }
     },
     methods: {
-      startCounter() {
+      increaseCounter() {
         this.counter++
+      },
+      resetCounter() {
+        this.counter = 0
+      },
+      startCounter() {
+        this.increaseCounter()
         this.timer = setInterval(() => {
-          this.counter++
+          this.increaseCounter()
         }, 750)
       },
       stopCounter() {
