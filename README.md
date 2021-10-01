@@ -1,69 +1,68 @@
-# test-assignment-ivi
+# Тестовое задание для ivi.ru
 
-## Build Setup
+### Содержание
+- [Описание приложения](#Описание-приложения)
+- [Пояснения](#Пояснения)
+- [Процесс сборки](#Процесс-сборки)
+
+### Описание приложения
+
+Проект представляет собой страницу с кнопкой по центру. Размеры кнопки и ее содержимого зависят от ширины экрана. При
+наведении на кнопку (или тапу по ней) изменяется фон страницы. При клике (или тапе) по кнопке запускается счетчик с
+бесконечным циклом. Каждая итерация длится 750 миллисекунд. При завершении одного цикла счетчик останавливается на 3
+секунды и запускается заново.
+
+### Пояснения
+
+<details>
+<summary>Почему Nuxt?</summary>
+
+- **Все из коробки**. Работая с Nuxt можно забыть о большом количестве механической работы (установка базовых пакетов,
+  настройка кэширования и так далее). В Gulp все придется настраивать вручную. На 20 раз это выматывает
+- **SEO**. Используя Nuxt на боевых проектах можно настроить SSR или сгенерировать проект статически
+- **Комьюнити**. У Vue в общем и у Nuxt в частности большое сообщество. Всегда можно найти решение появившейся проблемы
+</details>
+
+<details>
+<summary>Почему Sass?</summary>
+
+> Выбор препроцессора не принципиален. Если нет требований - использую то, с чем имел больше опыта. В данном случае это
+Sass
+</details>
+
+<details>
+<summary>Почему, используя Sass, я не пользуюсь вложениями?</summary>
+
+> Когда вложенных элементов становится много, становится очень сложно ориентироваться в классах. Приходится постоянно
+скроллить до родителя, чтобы понять, к чему относится вложенный класс. Но есть исключения (например, псевдоклассы или
+псевдоэлементы вкладывать довольно удобно)
+</details>
+
+<details>
+<summary>Почему Netlify?</summary>
+
+> Простейший способ развернуть приложение. Удобный процесс Continuous Deployment
+</details>
+
+<details>
+<summary>О чем я позаботился?</summary>
+
+- **Локальный сервер**. При запуске команды `npm run dev` вместо `localhost` определяется локальная сеть устройства. Это
+  позволяет тестировать проект с любого устройства в пределах заданной сети
+- **Поворот не туда**. Предусмотрен ответ для несуществующей страницы
+- **Эстетика**. Шрифты + плавное переключение фона страницы + фавиконка
+</details>
+
+### Процесс сборки
 
 ```bash
-# install dependencies
+# Установка зависимостей
 $ npm install
 
-# serve with hot reload at localhost:3000
+# Запуск локального сервера с hot-reload
 $ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
+# Генерация финальной сборки и тест на локальном сервере
 $ npm run generate
+$ npm run start
 ```
-
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
-
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
