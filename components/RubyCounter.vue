@@ -67,6 +67,7 @@
     clip-path: $ruby-clip;
     font-family: $fonts-default;
     font-size: $ruby-font-size;
+    font-weight: 700;
     color: #fff;
     background-color: $red-ivi;
     cursor: pointer;

@@ -37,6 +37,10 @@
     margin: auto;
   }
 
+  .error__title {
+    font-weight: 700;
+  }
+
   .error__link {
     padding: 12px;
     color: #000;
