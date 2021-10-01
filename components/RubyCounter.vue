@@ -1,11 +1,32 @@
 <template lang="pug">
-  button.ruby-counter
-    span.ruby-counter__content Go!
+  button.ruby-counter(@click.once="startCounter")
+    span.ruby-counter__content {{ counter ? counter : 'Go!' }}
 </template>
 
 <script>
   export default {
     name: 'RubyCounter',
+    data() {
+      return {
+        counter: 0,
+        timer: null
+      }
+    },
+    watch: {
+      counter(value) {
+        if (value > 3) {
+          this.counter = 0
+        }
+      }
+    },
+    methods: {
+      startCounter() {
+        this.counter++
+        this.timer = setInterval(() => {
+          this.counter++
+        }, 750)
+      }
+    }
   }
 </script>
 
