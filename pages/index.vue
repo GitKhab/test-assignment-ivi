@@ -1,3 +1,3 @@
-<template>
-  <div>*content*</div>
+<template lang="pug">
+  div.home content
 </template>
