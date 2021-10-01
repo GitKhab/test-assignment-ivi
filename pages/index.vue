@@ -1,5 +1,6 @@
 <template lang="pug">
-  div.home content
+  div.home
+    RubyCounter.home__ruby-counter
 </template>
 
 <script>
@@ -16,3 +17,14 @@
     }
   }
 </script>
+
+<style lang="scss">
+  .home {
+    display: flex;
+    padding: 24px 16px;
+  }
+
+  .home__ruby-counter {
+    margin: auto;
+  }
+</style>
