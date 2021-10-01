@@ -17,6 +17,7 @@
         if (value > 3) {
           this.counter = 0
           this.stopCounter()
+          setTimeout(this.startCounter, 3000)
         }
       }
     },
