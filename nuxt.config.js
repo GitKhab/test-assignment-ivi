@@ -50,6 +50,11 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
+  // Path to the fallback HTML file: https://nuxtjs.org/docs/configuration-glossary/configuration-generate/#fallback
+  generate: {
+    fallback: true
+  },
+
   // Development server host: https://nuxtjs.org/docs/features/configuration/#edit-host-and-port
   server: {
     host: '0.0.0.0' // default: localhost

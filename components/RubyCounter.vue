@@ -71,6 +71,7 @@
     color: #fff;
     background-color: $red-ivi;
     cursor: pointer;
+    outline: none;
   }
 
   .ruby-counter__content {
