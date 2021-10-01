@@ -25,6 +25,10 @@ module.exports = {
 
     // Disallow a space before function parenthesis
     // https://eslint.org/docs/rules/space-before-function-paren
-    'space-before-function-paren': ['error', 'never']
+    'space-before-function-paren': ['error', 'never'],
+
+    // Disable "Enforce order of attributes"
+    // https://eslint.vuejs.org/rules/attributes-order.html
+    'vue/attributes-order': 'off'
   }
 }
