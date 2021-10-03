@@ -1,7 +1,7 @@
 <template lang="pug">
   button.ruby-counter(
     @click.once="startCounter"
-    @mouseover="switchOnRubyHoverStatus"
+    @mouseenter="switchOnRubyHoverStatus"
     @mouseleave="switchOffRubyHoverStatus"
   )
     span.ruby-counter__content {{ counter ? counter : 'Go!' }}
