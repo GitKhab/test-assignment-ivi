@@ -1,7 +1,7 @@
 <template lang="pug">
   button.ruby-counter(
     @click.once="startCounter"
-    @mouseover="switchOnRubyHoverStatus"
+    @mouseenter="switchOnRubyHoverStatus"
     @mouseleave="switchOffRubyHoverStatus"
   )
     span.ruby-counter__content {{ counter ? counter : 'Go!' }}
@@ -72,6 +72,9 @@
     background-color: $red-ivi;
     cursor: pointer;
     outline: none;
+    &:focus-visible {
+      background-color: darken($red-ivi, 15%)
+    }
   }
 
   .ruby-counter__content {
