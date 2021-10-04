@@ -72,6 +72,9 @@
     background-color: $red-ivi;
     cursor: pointer;
     outline: none;
+    &:focus-visible {
+      background-color: darken($red-ivi, 15%)
+    }
   }
 
   .ruby-counter__content {
