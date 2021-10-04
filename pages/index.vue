@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.home(:class="dynamicHomeStyles")
+  main.home(:class="dynamicHomeStyles")
     RubyCounter.home__ruby-counter
 </template>
 
